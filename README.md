@@ -1,6 +1,6 @@
 # DC101-Game-MangubatPaolo
 
-title; WHACK-A-MOLE pixeled-Style
+title; WHACK-A-MOLE Pixeled-Style
 
 Description;  Whack-a-Mole is a fast-paced arcade game presented in a classic inspired pixel art style. The game features simple, blocky graphics, limited color tones, and retro sound effects that capture the nostalgic feel of old handheld consoles. The screen layout is clean and minimal, making the gameplay easy to understand and visually appealing.
 
