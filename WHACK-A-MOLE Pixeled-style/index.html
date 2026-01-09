@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixel Whack-a-Mole</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="gameboy">
+    <div class="screen">
+      <div id="hellPopup" class="popup-overlay" style="display: none;">
+        <div class="popup-box">
+          <p class="popup-text">Are you sure? 🔥</p>
+          <div class="popup-buttons">
+            <button id="confirmHell" class="popup-btn yes-btn">YES</button>
+            <button id="cancelHell" class="popup-btn no-btn">NO</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="menu" class="menu">
+        <h1>WHACK-A-MOLE</h1>
+        <div class="difficulty-section">
+          <p style="margin: 0 0 10px 0; font-size: 12px;">Select Difficulty:</p>
+          <div class="difficulty-buttons">
+            <button class="difficulty-btn" data-difficulty="easy" data-speed="3000">EASY</button>
+            <button class="difficulty-btn" data-difficulty="medium" data-speed="1500">MEDIUM</button>
+            <button class="difficulty-btn" data-difficulty="hard" data-speed="950">HARD</button>
+            <button class="difficulty-btn" data-difficulty="hellmode" data-speed="825">HELLMODE</button>
+          </div>
+        </div>
+        <button id="startBtn" class="start-btn">START</button>
+      </div>
+      
+      <div id="gameScreen" class="game-screen" style="display: none;">
+        <h1>WHACK-A-MOLE</h1>
+        <div class="stats">
+          <div class="score">Score: <span id="score">0</span></div>
+          <div class="lives">Lives: <span id="lives">3</span></div>
+        </div>
+
+        <div class="grid">
+        <div class="hole"><img class="mole" src="assets/mole.png" alt="mole"><img class="hammer" src="assets/hammer.png" alt="hammer"></div>
+        <div class="hole"><img class="mole" src="assets/mole.png" alt="mole"><img class="hammer" src="assets/hammer.png" alt="hammer"></div>
+        <div class="hole"><img class="mole" src="assets/mole.png" alt="mole"><img class="hammer" src="assets/hammer.png" alt="hammer"></div>
+        <div class="hole"><img class="mole" src="assets/mole.png" alt="mole"><img class="hammer" src="assets/hammer.png" alt="hammer"></div>
+        <div class="hole"><img class="mole" src="assets/mole.png" alt="mole"><img class="hammer" src="assets/hammer.png" alt="hammer"></div>
+        <div class="hole"><img class="mole" src="assets/mole.png" alt="mole"><img class="hammer" src="assets/hammer.png" alt="hammer"></div>
+        <div class="hole"><img class="mole" src="assets/mole.png" alt="mole"><img class="hammer" src="assets/hammer.png" alt="hammer"></div>
+        <div class="hole"><img class="mole" src="assets/mole.png" alt="mole"><img class="hammer" src="assets/hammer.png" alt="hammer"></div>
+        <div class="hole"><img class="mole" src="assets/mole.png" alt="mole"><img class="hammer" src="assets/hammer.png" alt="hammer"></div>
+        </div>
+
+        <div class="footer">Tap the mole!</div>
+      </div>
+
+      <div id="loseScreen" class="lose-screen" style="display: none;">
+        <h1>GAME OVER</h1>
+        <div class="lose-message">
+          <p class="final-score">Final Score: <span id="finalScore">0</span></p>
+        </div>
+        <button id="playAgainBtn" class="start-btn">PLAY AGAIN</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
