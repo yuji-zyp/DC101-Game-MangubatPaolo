@@ -1,4 +1,4 @@
-# DC101-Game-MangubatPaolo
+# DC101_Game_MangubatPaolo
 
 title; WHACK-A-MOLE Pixeled-Style
 
